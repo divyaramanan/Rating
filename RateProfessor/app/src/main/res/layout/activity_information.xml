@@ -1,0 +1,203 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="horizontal"
+    tools:context="divya.example.com.rateprofessor.Information"
+    android:nestedScrollingEnabled="false">
+
+
+
+
+<TableRow android:layout_height="wrap_content" android:layout_width="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/textView2"
+        android:layout_span="3"
+        android:textSize="20sp"
+        android:textStyle="bold|normal|italic"
+        android:textColor="#ff215124" />
+    </TableRow>
+
+    <TableRow android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_marginTop="5dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/office"
+        android:id="@+id/textView5"
+        android:paddingRight="20dp"
+         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/blank"
+        android:id="@+id/textView6"
+        android:layout_column="2" />
+
+    </TableRow>
+
+    <TableRow android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_marginTop="5dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/phone"
+        android:id="@+id/textView7"
+         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/blank"
+        android:id="@+id/textView8"
+        android:layout_column="2" />
+    </TableRow>
+    <TableRow android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_marginTop="5dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/email"
+        android:id="@+id/textView9"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/blank"
+        android:id="@+id/textView10"
+        android:layout_column="2" />
+    </TableRow>
+
+    <TableRow android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_marginTop="5dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rating"
+        android:id="@+id/textView11"
+        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/blank"
+            android:id="@+id/textView12"
+            android:layout_column="2" />
+
+
+    </TableRow>
+
+    <TableRow android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_marginTop="25dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/input"
+        android:id="@+id/textView13"
+        android:layout_span="3"
+        android:textSize="20sp"
+        android:textStyle="bold|normal|italic"
+        android:textColor="#ff215124" />
+     />
+
+
+    </TableRow>
+
+    <TableRow android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_marginTop="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rating"
+            android:id="@+id/textView14"
+            />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            style="?android:attr/ratingBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:max="5"
+            android:numStars="5"
+            android:stepSize="1"
+            android:layout_column="2"
+
+           />
+    </TableRow>
+
+
+
+    <TableRow android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_marginTop="0dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Comment"
+            android:id="@+id/textView4"
+            />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText"
+            android:layout_column="2"
+
+        />
+    </TableRow>
+
+    <TableRow android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_marginTop="5dp">
+        <LinearLayout
+            android:layout_span="5">
+        <Button
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/post"
+            android:id="@+id/button"
+            android:onClick="postUserInputs"
+            android:layout_marginRight="10dp"
+
+           />
+
+        <Button
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/clear"
+            android:id="@+id/button2"
+            android:onClick="clearInputs"
+
+            />
+        </LinearLayout>
+    </TableRow>
+
+    <TableRow android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_marginTop="25dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/comments"
+            android:id="@+id/textView15"
+            android:layout_span="3"
+            android:textSize="20sp"
+            android:textStyle="bold|normal|italic"
+            android:textColor="#ff215124" />
+        />
+    </TableRow>
+    <TableRow android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_marginTop="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView16"
+            android:layout_span="5"
+          />
+        />
+    </TableRow>
+
+</TableLayout>
+</ScrollView>
